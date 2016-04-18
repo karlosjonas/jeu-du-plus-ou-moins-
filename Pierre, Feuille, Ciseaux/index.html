@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Pierre, Feuille, Ciseaux</title>
+		<link rel="stylesheet" href="css_2/style_2.css">
+	</head>
+
+	<body>
+
+		<h1>Jeu de la <span>pierre</span>, <span>feuille</span>, <span>ciseaux</span></h1>
+		<div id="posicion">
+			<select name="menu" id="menu" onChange="seleccionitem()">
+	        <!--El evento << onChange >> se lanza cuando un elemento 
+	            select, text o textarea de un formulario pierde el focus (o cursor) 
+	            y además su valor ha sido cambiado, 
+	            esto es, si se está introduciendo datos en una casilla de texto, 
+	            el evento no se activará hasta que no se pase a otra casilla. La sintaxis de su uso es:
+
+	            <input type="tipo de elemento" onChange="función a ejecutar">-->
+				
+					<option value="3">Sélectionner :</option>
+					<option value="0">Pierre</option>
+					<option value="1">Feuille</option>
+					<option value="2">Ciseaux</option>
+				
+			
+			</select>
+		
+			<button id="boton">Go</button>
+			<div id="resultado"></div>
+			<div id="empate"></div>
+			<div id="ganar"></div>
+			<div id="perder"></div>
+	        <div id="error"></div>
+        </div>
+
+	<script src="js_2/script_2.js"></script>
+
+	</body>
+</html>
+
+
